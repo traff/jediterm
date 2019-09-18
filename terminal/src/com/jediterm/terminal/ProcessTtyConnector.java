@@ -21,7 +21,6 @@ public abstract class ProcessTtyConnector implements TtyConnector {
   private Process myProcess;
 
   public ProcessTtyConnector(@NotNull Process process, Charset charset) {
-    myOutputStream = process.getOutputStream();
     myCharset = charset;
     myInputStream = process.getInputStream();
     myReader = new InputStreamReader(myInputStream, charset);
