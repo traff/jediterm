@@ -13,7 +13,6 @@ import java.nio.charset.Charset;
  * @author traff
  */
 public abstract class ProcessTtyConnector implements TtyConnector {
-  protected final InputStream myInputStream;
   protected final OutputStream myOutputStream;
   protected Charset myCharset;
   private Dimension myPendingTermSize;
